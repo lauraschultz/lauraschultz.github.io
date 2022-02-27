@@ -1,6 +1,9 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
+
+const dev = process.env.NODE_ENV === 'development';
+console.log(process);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -33,7 +36,16 @@ const config = {
 	],
 	extensions: ['.svelte', '.md'],
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null,
+			precompress: false
+		}),
+		paths: {
+			// base: dev ? '' : '/personal-site-v2'
+		}
 	}
 };
 

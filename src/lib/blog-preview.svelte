@@ -12,7 +12,7 @@
 				finished.
 			</p>
 			<a
-				href="/blog"
+				href="blog"
 				class="my-4 inline-block rounded border-2 border-slate-400 px-5 py-1 font-bold italic text-slate-400 transition-colors hover:bg-slate-400 hover:text-slate-50"
 				>All posts</a
 			>

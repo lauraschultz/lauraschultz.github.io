@@ -26,7 +26,7 @@
 			</div>
 			<a
 				class="shrink-0 rounded border-2 border-teal-900 py-2 px-4 text-sm font-extrabold italic text-teal-900 hover:bg-teal-900 hover:text-slate-100"
-				href={`/blog/${post.slug}`}
+				href={`blog/${post.slug}`}
 			>
 				Read more
 			</a>

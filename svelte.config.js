@@ -44,7 +44,7 @@ const config = {
 			precompress: false
 		}),
 		paths: {
-			// base: dev ? '' : '/personal-site-v2'
+			base: '/docs'
 		}
 	}
 };

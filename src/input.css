@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-outline {
+		-webkit-text-stroke: 0.12rem theme('colors.teal.900');
+		-webkit-text-fill-color: transparent;
+	}
+	.text-shadow-gray {
+		text-shadow: 0.25rem 0.2rem 0 theme('colors.gray.200');
+	}
+	.clamp {
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+}
